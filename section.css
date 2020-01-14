@@ -1,5 +1,6 @@
 section{
     display: flex;
+    margin-top: 2%;
 }
 
 aside{
@@ -7,6 +8,16 @@ aside{
     flex-direction: column;
     flex: 1 1 25%;
     
+}
+
+.image{
+    border: 3px solid coral;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    margin: auto;
+    background-image: url('images/me.jpg');
+    background-size: 100%;
 }
 
 content{
@@ -21,9 +32,14 @@ tag-right{
     flex: 1 1 25%;
 }
 
+h1,h2{
+    text-align: center;
+}
+
 @media only screen and (max-width:600px){
     section{
         display: flex;
         flex-direction: column;
+        margin-top: 10%;
     }
 }
