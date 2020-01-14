@@ -1,0 +1,19 @@
+there is quite a clear difference between using flex and grid...
+if you do use flex to make a three column
+and you need to add more content on say the second column like another post or article
+it will not break to the next line because you did a flex inline(default) from line 1. which doesnt break to next line, rather it lines up the next
+article to the previous one, like a two column newspaper
+
+if you do a grid layout
+you have the flexibility to define how much the column for the article takes and make the row auto so it flows accordingly to the content height
+
+if you add another article beneath it, it will continue downwards...this is because the article has already being defined to go on a defined column track
+
+i.e
+
+about-me col- 1/3, row-1
+
+article col-3/9, row-auto
+
+tag col 9/12, row-1
+
