@@ -1,0 +1,57 @@
+:root{
+    font-size: 20px;
+}
+
+header{
+    display: flex;
+}
+
+.logo{
+    display: flex;
+    flex: 1 1 10%;
+    background-color:black;
+    color: white;
+}
+
+.menu{
+    display: flex;
+    flex: 1 1 90%;
+    background-color: #ffaacc;
+    justify-content: center;
+}
+
+.menu>*{
+    background-color: aliceblue;
+    border: 2px solid black;
+    margin: 10px;
+    border-radius: 10px;
+    padding: 10px;
+
+}
+
+.logo-name{
+    display: none;
+}
+
+@media only screen and (max-width:600px){
+    .logo{
+        display: none;
+    }
+
+    .menu{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .logo-name{
+        display: block;
+    }
+
+    .menu .logo-name{
+        background-color: white;
+        border: none;
+        text-align: center;
+        
+    }
+
+}
