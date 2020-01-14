@@ -1,8 +1,7 @@
 article{
-    display: flex;
-    flex-direction: column;
-    flex: 1 1 50%;
-    margin: 5px;
+    grid-column: 3/9;
+    grid-row: auto;
+    margin: 10px;
 }
 
 article h1{
@@ -13,18 +12,6 @@ article h1{
     background-color:hsl(100, 70%, 95%);
 }
 
-.news{
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(auto-fill,minmax(20px,1fr));
-}
-
-
-.news-image-caption{
-    grid-row: 3;
-    background-color: hsl(174, 70%, 95%)
-
-}
 
 
 .meta{
@@ -63,5 +50,18 @@ article h1{
     background-image: url('./images/me.jpg');
     background-size: cover;
     object-fit: cover;
-    grid-row: 2/3;
+}
+
+
+@media only screen and (max-width:600px){
+    .news-body{
+        line-height: 6vh;
+        font-stretch: expanded;
+
+    }
+
+    .news-summary{
+        line-height: 6vh;
+        font-stretch: expanded;
+    }
 }
