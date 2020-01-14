@@ -1,0 +1,29 @@
+section{
+    display: flex;
+}
+
+aside{
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 25%;
+    
+}
+
+content{
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 50%;
+}
+
+tag-right{
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 25%;
+}
+
+@media only screen and (max-width:600px){
+    section{
+        display: flex;
+        flex-direction: column;
+    }
+}
