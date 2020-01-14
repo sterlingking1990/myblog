@@ -20,16 +20,27 @@ aside{
     background-size: 100%;
 }
 
-content{
-    display: flex;
-    flex-direction: column;
-    flex: 1 1 50%;
-}
 
 tag-right{
     display: flex;
     flex-direction: column;
     flex: 1 1 25%;
+}
+
+.tag-list{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tag-list>div{
+    padding: 5px;
+    border: 1px solid saddlebrown;
+}
+
+.about-me h2{
+    display: flex;
+    justify-content: center;
+
 }
 
 h1,h2{
