@@ -33,6 +33,7 @@ article h1{
 .news-body{
     line-height: 4vh;
     margin-top: 20px;
+    text-align: justify;
 }
 
 .news-body em{
